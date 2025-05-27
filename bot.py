@@ -4,6 +4,13 @@ import logging
 import os
 
 TOKEN = os.getenv('BOT_TOKEN')
+print(f"Токен из окружения: {TOKEN}")
+
+if TOKEN is None:
+    raise ValueError("Переменная окружения BOT_TOKEN не установлена!")
+
+updater = Updater(TOKEN, use_context=True)
+
 
 REMINDER_MESSAGE = """Продержишься дольше?
 ➡ https://1wbfqv.life/v3/2451/rocket-queen?p=2u70
