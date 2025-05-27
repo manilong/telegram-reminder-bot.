@@ -3,7 +3,7 @@ from telegram import Update
 import logging
 import os
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv('BOT_TOKEN')
 
 REMINDER_MESSAGE = """Продержишься дольше?
 ➡ https://1wbfqv.life/v3/2451/rocket-queen?p=2u70
