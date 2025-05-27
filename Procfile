@@ -1,2 +1,1 @@
-start:
-  command: ./start.sh
+python bot.py
